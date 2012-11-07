@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Josh Benbenek</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Metamorphous' rel='stylesheet' type='text/css'>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top navbar-border">
+      <div class="navbar-inner">
+        <div class="container-fluid clearfix">
+          <div class="pull-left">
+            <a class="brand" href="http://josh-benbenek.com" rel="me"> Benbenek Productions</a> 
+          </div>
+          <div class="pull-right">
+            <ul class="nav">
+              <li><a href="#">Home </a></li>
+              <li><a href="#">Projects </a></li>
+              <li><a href="#">Contact </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid content">
+      <%= yield %>
+    </div>
+
+  </body>
+</html>

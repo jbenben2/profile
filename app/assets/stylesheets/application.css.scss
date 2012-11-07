@@ -1,0 +1,177 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self.
+ */
+
+@import "partials/gradients";
+@import "partials/animations";
+
+html{
+  background: #000 no-repeat fixed center url("chicago-bw.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  background: none;  
+}
+
+.center {
+  text-align: center;
+}
+
+.center > img {
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(46, 142, 95, 0.85);
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.well {
+  padding: 5px;
+  width: 100%;
+}
+
+.well, .hero-unit {
+  background: rgba(200,200,200,.85);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px rgba(46, 142, 95, 0.15);
+}
+
+ul.nav {
+  float: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.navbar-inner {
+  min-height: 35px !important;
+  padding-top: 10px;
+}
+
+.nav > li > a {
+  border: none !important;
+  padding-top: 0px !important;
+}
+
+.nav-stacked li > a:hover{
+  @include top-down-gradient(#6af,#8cf);
+}
+
+.well > .nav {
+  margin: 0px;
+}
+
+.navbar-fixed-top{
+  margin-bottom: 40px;
+  position: relative;
+}
+
+
+.home-content {
+  min-height: 500px;
+  min-width: 700px;
+  max-width: 1200px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #000;
+  font-family: 'Metamorphous', cursive;
+  font-weight: 500;
+}
+
+.about-headline {
+  color: #000;
+  padding: 20px;
+  font-family: 'Metamorphous', cursive;
+  font-size: 30px;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.brand {
+  font-family: 'Metamorphous', cursive;
+  font-size: 30px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding-top: 0px !important;
+}
+
+.brand:hover {
+  color: #d9d9d9;
+  text-decoration: none;
+  text-shadow: 0px -3px 5px rgba(46,186,120, .7) !important;
+  -webkit-text-shadow: 0px -3px 5px rgba(46,186,120, .7) !important;
+  -moz-text-shadow: 0px -3px 5px rgba(46,186,120, .7) !important;
+}
+
+.content{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.profile {
+  border: 1px solid #333;
+  border-radius: 15px;
+  box-shadow: -7px 7px 7px rgba(20,20,20, .60);
+  position: relative;
+  top: -120px;
+}
+
+.push-down {
+  max-height: 200px;
+  margin-top: 30px;
+}
+
+.title {
+  margin-left: 60px;
+
+  h1, h2 {
+    color: rgba(255,255,255, .6);
+    text-shadow: 2px 2px 5px rgba(20,20,20, .7) !important;
+    -webkit-text-shadow: 2px 2px 5px rgba(20,20,20, .7) !important;
+    -moz-text-shadow: 2px 2px 5px rgba(20,20,20, .7) !important;
+  }
+  h1 {
+    font-size: 52px;
+  }
+
+  h2 {
+    margin-left: 250px;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media screen and (max-width: 880px ){
+  .title > h1 {
+    font-size: 40px;
+  }
+
+  .title > h2 {
+    font-size: 30px;
+    margin-left: 0px;
+  }
+
+  .push-down {
+    margin-top:  100px;
+  }
+}
+

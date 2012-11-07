@@ -1,0 +1,31 @@
+@keyframes move_name
+{
+0%   {right: 0%; top: 0px;}
+25%  {right: 25%; top: 0px;}
+50%  {left: 50%; top: 0px;}
+100% {left: 15%; top: 0px;}
+}
+
+@-moz-keyframes move_name /* Firefox */
+{
+0%   {right: 0%; top: 0px;}
+25%  {right: 25%; top: 0px;}
+50%  {left: 50%; top: 0px;}
+100% {left: 15%; top: 0px;}
+}
+
+@-webkit-keyframes move_name /* Safari and Chrome */
+{
+0%   {right: 0%; top: 0px;}
+25%  {right: 25%; top: 0px;}
+50%  {left: 50%; top: 0px;}
+100% {left: 15%; top: 0px;}
+}
+
+@-o-keyframes move_name /* Opera */
+{
+0%   {right: 0%; top: 0px;}
+25%  {right: 25%; top: 0px;}
+50%  {left: 50%; top: 0px;}
+100% {left: 15%; top: 0px;}
+}
